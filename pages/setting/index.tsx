@@ -23,10 +23,12 @@ const Setting = () => {
           </div>
           <div className="flex flex-col w-5/6 min-h-screen pr-3">
             <Header />
+            <div className="mt-3">Setting</div>
           </div>
         </div>
         <div className="flex flex-col sm:hidden">
           <Header />
+          <div className="mt-3">Setting</div>
         </div>
       </Section>
     </div>

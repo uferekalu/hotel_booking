@@ -23,10 +23,12 @@ const Favorites = () => {
           </div>
           <div className="flex flex-col w-5/6 min-h-screen pr-3">
             <Header />
+            <div className="mt-3">Favorites</div>
           </div>
         </div>
         <div className="flex flex-col sm:hidden">
           <Header />
+          <div className="mt-3">Favorites</div>
         </div>
       </Section>
     </div>

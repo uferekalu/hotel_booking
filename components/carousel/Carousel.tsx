@@ -25,8 +25,9 @@ const CarouselComponent: React.FC = () => {
     >
       {images.map((imageSrc, index) => (
         <div key={index} className="mt-7">
-          <div className="w-full h-60 relative rounded-lg">
+          <div className="w-full h-44 relative rounded-lg">
             <Image
+              className="rounded-lg"
               src={imageSrc}
               alt="Slider 1"
               layout="fill"

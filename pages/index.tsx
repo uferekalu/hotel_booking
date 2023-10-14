@@ -6,6 +6,8 @@ import { Sidebar } from "@/components/sidebar/Sidebar";
 import { Header } from "@/components/header/Header";
 import CarouselComponent from "@/components/carousel/Carousel";
 import Information from "@/components/information/Information";
+import TrendingDestinations from "@/components/trendingDestinations/TrendingDestinations";
+import BestOffers from "@/components/bestOffers/BestOffers";
 
 export default function Home() {
   return (
@@ -26,6 +28,8 @@ export default function Home() {
             <div className="flex justify-center items-center -mt-3 z-50">
               <Information />
             </div>
+            <TrendingDestinations />
+            <BestOffers />
           </div>
         </div>
         <div className="flex flex-col sm:hidden h-full">
@@ -34,6 +38,8 @@ export default function Home() {
           <div className="flex justify-center items-center">
             <Information />
           </div>
+          <TrendingDestinations />
+          <BestOffers />
         </div>
       </Section>
     </div>
