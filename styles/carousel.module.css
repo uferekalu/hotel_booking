@@ -1,0 +1,17 @@
+.customCarousel .carousel-slider {
+  transition-duration: 2s !important;
+}
+
+.customImg {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: 200px !important;
+}
+
+.unsetImg {
+  width: 100%;
+}
+.unsetImg > div {
+  position: unset !important;
+}

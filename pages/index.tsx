@@ -4,10 +4,12 @@ import { AppConfig } from "@/utils/AppConfig";
 import { Section } from "@/components/layout/Section";
 import { Sidebar } from "@/components/sidebar/Sidebar";
 import { Header } from "@/components/header/Header";
+import CarouselComponent from "@/components/carousel/Carousel";
+import Information from "@/components/information/Information";
 
 export default function Home() {
   return (
-    <div className="flex flex-col text-gray-600 antialiased">
+    <div className="flex flex-col text-gray-600 antialiased h-full">
       <Meta title={AppConfig.title} description={AppConfig.description} />
       <Section
         width="w-full"
@@ -20,10 +22,18 @@ export default function Home() {
           </div>
           <div className="flex flex-col w-5/6 min-h-screen pr-3">
             <Header />
+            <CarouselComponent />
+            <div className="flex justify-center items-center -mt-3 z-50">
+              <Information />
+            </div>
           </div>
         </div>
-        <div className="flex flex-col sm:hidden">
+        <div className="flex flex-col sm:hidden h-full">
           <Header />
+          <CarouselComponent />
+          <div className="flex justify-center items-center">
+            <Information />
+          </div>
         </div>
       </Section>
     </div>
