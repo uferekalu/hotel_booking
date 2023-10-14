@@ -1,14 +1,17 @@
 import React from "react";
 import { Meta } from "@/components/layout/Meta";
-import { AppConfig } from "@/utils/AppConfig";
 import { Section } from "@/components/layout/Section";
 import { Sidebar } from "@/components/sidebar/Sidebar";
+import { AppConfig } from "@/utils/AppConfig";
 import { Header } from "@/components/header/Header";
 
-export default function Home() {
+const Setting = () => {
   return (
     <div className="flex flex-col text-gray-600 antialiased">
-      <Meta title={AppConfig.title} description={AppConfig.description} />
+      <Meta
+        title={`${AppConfig.title} | Setting`}
+        description={AppConfig.description}
+      />
       <Section
         width="w-full"
         height="min-h-screen"
@@ -28,4 +31,6 @@ export default function Home() {
       </Section>
     </div>
   );
-}
+};
+
+export default Setting;
