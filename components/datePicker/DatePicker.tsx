@@ -14,7 +14,7 @@ const DatePickerComp = () => {
 
   return (
     <div className="flex">
-      <i className="bi bi-card-checklist rounded-full z-50 -mr-6 mt-2.5"></i>
+      <i className="bi bi-card-checklist rounded-full sm:z-50 -mr-6 mt-2.5"></i>
       <div className="relative max-w-sm">
         <DatePicker
           selected={selectedDate}
@@ -35,7 +35,7 @@ const DatePickerComp = () => {
           </svg>
         </div>
       </div>
-      <div className="flex ml-2 mt-1.5">|</div>
+      <div className="sm:flex hidden ml-2 mt-1.5">|</div>
     </div>
   );
 };
